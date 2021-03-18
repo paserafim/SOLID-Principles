@@ -2,9 +2,9 @@
 
 namespace DIP
 {
-    public class Emailer
+    public class Emailer : IMessageSender
     {
-        public void SendEmail(Person person, string message)
+        public void SendMessage(IPerson person, string message)
         {
             Console.WriteLine($"Simulating sending email to { person.EmailAddress }");
         }
