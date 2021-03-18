@@ -4,12 +4,10 @@ using System.Text;
 
 namespace ISP
 {
-    public class DVD : ILibraryItem
+    public class DVD : IBorrowableDVD
     {
         public string LibraryId { get; set; }
         public string Title { get; set; }
-        public string Author { get; set; } = "";
-        public int Pages { get; set; } = -1;
         public int CheckOutDurationInDays { get; set; } = 14;
         public DateTime BorrowDate { get; set; }
         public string Borrower { get; set; }
