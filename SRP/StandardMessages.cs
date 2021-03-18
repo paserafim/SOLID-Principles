@@ -13,6 +13,7 @@ namespace SRP
 
         public static void EndApplication()
         {
+            Console.WriteLine("Please enter to close...");
             Console.ReadLine();
         }
 

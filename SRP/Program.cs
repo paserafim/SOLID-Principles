@@ -8,6 +8,7 @@ namespace SRP
         {
             StandardMessages.WelcomeMessage();
 
+            // We should not have this tight couple thing - use DI / Interfaces
             Person user = PersonDataCapture.Capture();
 
             bool isUserValid = PersonValidator.Validate(user);
