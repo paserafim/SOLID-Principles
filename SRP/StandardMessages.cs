@@ -15,5 +15,10 @@ namespace SRP
         {
             Console.ReadLine();
         }
+
+        public static void DisplayValidationError(string field)
+        {
+            Console.WriteLine($"You did not give us a valid { field } name!");
+        }
     }
 }
